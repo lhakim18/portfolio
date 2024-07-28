@@ -123,6 +123,7 @@
 						}, 350);
 
 				});
+		
 
 		$body
 			.on('click', 'a[href="#menu"]', function(event) {
@@ -140,6 +141,32 @@
 					if (event.keyCode == 27)
 						$menu._hide();
 
+					
+			});
+			$(document).ready(function() {
+				$('#contactForm').on('submit', function(event) {
+					event.preventDefault(); // Prevent the default form submission
+		
+					var form = $(this);
+					var formData = form.serialize(); // Serialize the form data
+		
+					$.ajax({
+						type: form.attr('method'),
+						url: form.attr('action'),
+						data: formData,
+						success: function(response) {
+							if (response.trim() === 'Success') {
+								form.hide(); // Hide the form
+								$('#thankYouMessage').show(); // Show the thank-you message
+							} else {
+								alert('There was an error sending your message. Please try again later.');
+							}
+						},
+						error: function() {
+							alert('There was an error sending your message. Please try again later.');
+						}
+					});
+				});
 			});
 
 })(jQuery);

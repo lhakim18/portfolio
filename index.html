@@ -31,23 +31,28 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
+								<li><a href="ad.html">Advertising</a></li>
+								<li><a href="ba.html">Business Analytics</a></li>
+								<li><a href="photo.html">Photography</a></li>
+								<li><a href="swe.html">Software Engineering</a></li>
+								<li><a href="resume.pdf" style="font-weight: bold;">Resume</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
 					</nav>
 
 				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>Hi! I'm Lilyan Hakim</h2>
-							<p>Explore my work!</a></p>
+				<section id="banner">
+					<div class="inner">
+						<div class="logo">
+							<span class="icon fa-dark fa-star"></span>
 						</div>
-					</section>
+						<h2>Hi! I'm Lilyan Hakim</h2>
+						<p>Explore my work!</p>
+						<a href="aboutme.html" class="special">About Me</a>
+					</div>
+				</section>
+				
 
 				<!-- Wrapper -->
 					<section id="wrapper">
@@ -55,11 +60,11 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/adclub.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Advertising</h2>
 										<p>As a strategist, I have had the opportunity to write creative briefs for various clients.</p>
-										<a href="#" class="special">Learn more</a>
+										<a href="ad.html" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -67,11 +72,11 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/questrom.png" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Business Analytics</h2>
 										<p>Using databases, I conducted regression and other analysis to find patterns in data for life expectancy and homicide rates.</p>
-										<a href="#" class="special">Learn more</a>
+										<a href="ba.html" class="special" target="_blank">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -79,11 +84,11 @@
 						<!-- Three -->
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/photography.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Photography</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<p>During my free time, I like to take photos as a way to journal my memories</p>
+										<a href="photo.html" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -92,8 +97,8 @@
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Software Engineering</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-									<section class="features">
+									<p>Check out my LinkedIn for updates on my HeadStarter AI SWE Fellowship!</p>
+									<!--<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
 											<h3 class="major">Sed feugiat lorem</h3>
@@ -122,52 +127,52 @@
 									<ul class="actions">
 										<li><a href="#" class="button">Browse All</a></li>
 									</ul>
-								</div>
+								</div> -->
 							</section>
 
 					</section>
 
 				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Get in touch</h2>
+						<p>If any of the content you saw today interested you and you would like to reach out, please fill this form below, and I will get back to you as soon as I can.</p>
+						<form id="contactForm" method="POST" action="https://formspree.io/f/xzzpeawo">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" required />
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" required />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4" required></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
 							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+						</form>
+						<div id="thankYouMessage" style="display:none;">
+							<h2>Thank you for your message!</h2>
+							<p>I will get back to you shortly.</p>
 						</div>
-					</section>
+						
+						<ul class="contact">
+							<li class="fas fa-file icon"><a href="resume.pdf">Resume</a></li>
+							<li class="icon solid fa-envelope"><a href="#">Lilyan.hakim12@gmail.com</a></li>
+							<li class="icon brands fa-linkedin"><a href="#">www.linkedin.com/in/lilyanhakim</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled Inc. All rights reserved.</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+				
 
 			</div>
 
@@ -178,6 +183,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+
+				
 
 	</body>
 </html>
